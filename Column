@@ -1,0 +1,15 @@
+import streamlit as st # type: ignore
+
+st.title("Column")
+st.subheader("Anggota Kelompok 4:")
+st.markdown("""
+1. Erina Nurul Hodijah - 0110122113
+2. Hanin Salwa Salsabila Hidayati Nurrohman - 0110122294
+3. Mohammad Ramdhani - 0110122083
+""")
+
+col1, col2 = st.columns(2)
+
+col1.write("Ini adalah kolom pertama")
+col1.image("../../Praktikum01/assets/Sapi.jpg")
+col2.write("Ini adalah kolom kedua")
