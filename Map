@@ -1,0 +1,18 @@
+import streamlit as st # type: ignore
+import pandas as pd # type: ignore
+import numpy as np # type: ignore
+
+st.title("Map")
+st.subheader("Anggota Kelompok 4:")
+st.markdown("""
+1. Erina Nurul Hodijah - 0110122113
+2. Hanin Salwa Salsabila Hidayati Nurrohman - 0110122294
+3. Mohammad Ramdhani - 0110122083
+""")
+
+df = pd.DataFrame(
+    np.random.randn(50, 2)/[10,10] + [15.4589, 75.0078], 
+    columns=["latitude", "longitude"]
+)
+
+st.map(df)
