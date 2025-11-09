@@ -1,0 +1,17 @@
+import streamlit as st # type: ignore
+import pandas as pd # type: ignore
+import numpy as np # pyright: ignore[reportMissingImports]
+
+st.title("Line Chart")
+st.subheader("Anggota Kelompok 4:")
+st.markdown("""
+1. Erina Nurul Hodijah - 0110122113
+2. Hanin Salwa Salsabila Hidayati Nurrohman - 0110122294
+3. Mohammad Ramdhani - 0110122083
+""")
+df = pd.DataFrame(
+    np.random.randn(40, 4),
+    columns=["C1", "C2", "C3", "C4"]
+)
+
+st.line_chart(df)
